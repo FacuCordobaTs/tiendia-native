@@ -498,6 +498,28 @@ export default function AddProductPage() {
                 </View>
               )}
             </Pressable>
+            {/* <Pressable 
+              onPress={() => generateProduct(false)}
+              disabled={isLoading || !selectedImage}
+            >
+              {({ pressed }) => (
+                <View 
+                  className={`w-full items-center justify-center rounded-full bg-sky-500 p-4 ${pressed ? 'opacity-80' : ''} ${isLoading || !selectedImage ? 'opacity-50' : ''}`}
+                  style={{ transform: [{ scale: pressed ? 0.98 : 1 }] }}
+                >
+                  {isLoading ? (
+                    <View className="flex-row items-center gap-3">
+                      <ActivityIndicator color="white" size="small" />
+                      <Text className="text-lg font-bold text-white">Subiendo...</Text>
+                    </View>
+                  ) : (
+                    <View className="flex-row items-center gap-3">
+                      <Text className="text-lg font-bold text-white">Subir Producto</Text>
+                    </View>
+                  )}
+                </View>
+              )}
+            </Pressable> */}
           </View>
       </ScrollView>
     </View>
