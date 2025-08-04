@@ -1,29 +1,61 @@
 {
   "expo": {
-    "name": "Native",
-    "slug": "Native",
-    "version": "1.0.0",
+    "name": "tiendia.app",
+    "slug": "tiendia",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logoblanco.png",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "scheme": "tiendia",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logoblanco.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Esta app necesita acceso a la cámara para tomar fotos de productos.",
+        "NSPhotoLibraryUsageDescription": "Esta app necesita acceso a la galería para seleccionar fotos de productos."
+      },
+      "bundleIdentifier": "com.tiendia.app"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/logoblanco.png",
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.NOTIFICATIONS"
+      ],
+      "package": "com.tiendia.app",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/logoblanco.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app necesita acceso a tus fotos para seleccionar imágenes de productos.",
+          "cameraPermission": "La app necesita acceso a la cámara para tomar fotos de productos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0da737fd-e5f7-40d6-bb58-12ac5e8d6b79"
+      }
+    },
+    "owner": "tiendia.app"
   }
 }

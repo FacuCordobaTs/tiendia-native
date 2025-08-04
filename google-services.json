@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "339880246458",
+    "project_id": "tiendia-notifications",
+    "storage_bucket": "tiendia-notifications.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339880246458:android:983ca16d5434b3d4435683",
+        "android_client_info": {
+          "package_name": "com.tiendia.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLp0F2w3xoiFp5EPdzJx780Uqfi42vI04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
